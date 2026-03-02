@@ -15,13 +15,14 @@ export default function Hero() {
           src="/images/pizza-teglia-3.jpg"
           alt="Pizza al taglio artigianale Pizzeria Boccione Monti Tiburtini Roma"
           fill
-          sizes="100vw"
-          className="object-cover"
+          sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 100vw"
+          className="object-cover object-center"
           priority
-          quality={85}
+          quality={95}
         />
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#2B2521]/60 via-[#2B2521]/40 to-[#2B2521]/75" />
+        {/* Gradient overlay — più scuro sui bordi per leggibilità testo */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/35 to-black/72" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/25 via-transparent to-black/25" />
       </div>
 
       {/* Content */}
