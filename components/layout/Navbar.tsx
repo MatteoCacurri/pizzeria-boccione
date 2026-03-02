@@ -9,6 +9,7 @@ import { Menu, X, MessageCircle } from "lucide-react";
 import { WHATSAPP_URL } from "@/lib/constants";
 
 const NAV_LINKS = [
+  { label: "Home", href: "/" },
   { label: "Chi siamo", href: "/#chi-siamo" },
   { label: "Menu", href: "/menu" },
   { label: "Galleria", href: "/galleria" },

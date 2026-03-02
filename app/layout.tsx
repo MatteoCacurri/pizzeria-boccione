@@ -3,6 +3,7 @@ import { Fraunces, Barlow } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import WhatsAppFloating from "@/components/layout/WhatsAppFloating";
 
 const fraunces = Fraunces({ variable: "--font-fraunces", subsets: ["latin"], axes: ["opsz"], display: "swap" });
 const barlow = Barlow({ variable: "--font-barlow", subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap" });
@@ -31,7 +32,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="it" className="scroll-smooth">
       <head><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} /></head>
       <body className={`${fraunces.variable} ${barlow.variable} antialiased`}>
-        <Navbar /><main>{children}</main><Footer />
+        <Navbar /><main>{children}</main><Footer /><WhatsAppFloating />
       </body>
     </html>
   );
